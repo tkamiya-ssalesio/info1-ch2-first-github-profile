@@ -27,7 +27,8 @@ jobs:
       # 3. 先生の管理リポジトリから評価スクリプトをダウンロード（ブラックボックス化）
       - name: 評価スクリプトの取得
         run: |
-          curl -sSL https://raw.githubusercontent.com/tkamiya-ssalesio/info1-grading-scripts/main/grade_profile.py -o grade_profile.py
+          curl -sSL https://raw.githubusercontent.com/falcon-base/info1-grading-scripts/main/grade_profile.py -o grade_profile.py
+
 
       # 4. 評価スクリプトの実行
       - name: 課題の自動採点
